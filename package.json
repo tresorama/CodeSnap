@@ -1,13 +1,13 @@
 {
-  "name": "codesnap",
-  "displayName": "CodeSnap",
+  "name": "codesnap-jachi",
+  "displayName": "CodeSnap-Jachi",
   "description": "📷 Take beautiful screenshots of your code",
   "version": "1.3.4",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kufii/CodeSnap"
+    "url": "https://github.com/tresorama/CodeSnap.git"
   },
-  "publisher": "adpyke",
+  "publisher": "tresorama",
   "icon": "icon.png",
   "license": "MIT",
   "engines": {
@@ -27,26 +27,26 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:codesnap.start"
+    "onCommand:codesnap-jachi.start"
   ],
   "main": "./src/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "codesnap.start",
-        "title": "CodeSnap 📸"
+        "command": "codesnap-jachi.start",
+        "title": "CodeSnap 📸 - Jachi"
       }
     ],
     "menus": {
       "editor/context": [
         {
-          "command": "codesnap.start"
+          "command": "codesnap-jachi.start"
         }
       ]
     },
     "configuration": {
       "type": "object",
-      "title": "CodeSnap",
+      "title": "CodeSnap - Jachi",
       "properties": {
         "codesnap.backgroundColor": {
           "scope": "resource",
