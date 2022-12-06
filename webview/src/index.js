@@ -6,10 +6,16 @@ const navbarNode = $('#navbar');
 const windowControlsNode = $('#window-controls');
 const windowTitleNode = $('#window-title');
 const btnSave = $('#save');
+const btnCopyImage = $('#copy-image');
+const btnCopyImageBase64 = $('#copy-image-as-base64');
 
 let config;
 
 btnSave.addEventListener('click', () => takeSnap(config));
+btnCopyImage.addEventListener('click', () => takeSnap({ ...config, shutterAction: 'copy' }));
+btnCopyImageBase64.addEventListener('click', () =>
+  takeSnap({ ...config, shutterAction: 'copy-as-base64' })
+);
 
 document.addEventListener('copy', () => takeSnap({ ...config, shutterAction: 'copy' }));
 

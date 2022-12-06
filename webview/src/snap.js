@@ -44,6 +44,9 @@ export const takeSnap = async (config) => {
     const blob = new Blob([array], { type: 'image/png' });
     navigator.clipboard.write([new ClipboardItem({ 'image/png': blob })]);
     cameraFlashAnimation();
+  } else if (config.shutterAction === 'copy-as-base64') {
+    navigator.clipboard.writeText(url);
+    cameraFlashAnimation();
   } else {
     vscode.postMessage({ type: config.shutterAction, data });
   }
