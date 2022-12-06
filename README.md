@@ -1,12 +1,13 @@
 # CodeSnap
 
-> This is a forked version of CodeSnap
+> This is a forked version of CodeSnap  
+>  
 > Original Extension: https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap
 
 ## Difference with original CodeSnap
 
-- allow to copy image to clipboard by clicking a button
-- allow to copy image as base64/dataurl string to clipboard by clicking a button
+- Copy image to clipboard by clicking a button
+- Copy image as base64/dataurl string to clipboard by clicking a button
 
 ## Description
 
